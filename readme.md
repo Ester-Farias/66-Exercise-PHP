@@ -13,10 +13,10 @@
     <li> ✔ Utilize a função explode para separar uma frase em palavras e imprima cada palavra em uma linha.</li>
     <li> ✔ Faça um script que substitua todas as ocorrências de uma palavra em uma frase por outra palavra.</li>
     <li> ✔ Crie um array com números aleatórios e encontre o maior valor.</li>
-    <li> ✔ Escreva uma função que receba um array de números e retorne a média</li>
-    <li>Utilize um loop para imprimir os números pares de 2 a 20.</li>
-    <li>Crie uma função que receba um número e retorne se é positivo, negativo ou zero. </li>
-    <li>Faça uma pesquisa em um array e retorne o índice de um elemento específico. </li>
+    <li>Escreva uma função que receba um array de números e retorne a média</li>
+    <li> ✔ Utilize um loop para imprimir os números pares de 2 a 20.</li>
+    <li> ✔ Crie uma função que receba um número e retorne se é positivo, negativo ou zero. </li>
+    <li> ✔ Faça uma pesquisa em um array e retorne o índice de um elemento específico. </li>
     <li>Crie uma função para verificar se uma palavra é um palíndromo. </li>
     <li>Utilize um loop para imprimir os valores de um array em ordem reversa. </li>
     <li>Crie um array associativo com informações de produtos (nome, preço, quantidade em estoque) e imprima uma tabela HTML com esses dados. </li>
