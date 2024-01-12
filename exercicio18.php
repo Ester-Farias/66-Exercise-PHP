@@ -4,6 +4,7 @@
 
     $word = [readline("Digite uma palavra para descobrir é ou não um palíndromo: \n\n")];
     $reverse = array_reverse($word);
+    print_r($reverse);
     if ($word == $reverse){
         echo "Sua palavra é um palíndromo! \n";
     } else{
