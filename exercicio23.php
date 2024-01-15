@@ -8,13 +8,18 @@
     }else if($numero == 1){
         return 1;
     }else{
-        for($i = 2; $i <= $numero; $i++){
-            $fatorial *= $i;
+        for($i = 1; $i <= $numero; $i++){
+            echo $i;
+            while ($i >= 1 and $i <= $numero){
+                echo $i * $numero;
+                
+                break;
+            }
         }
-        return $fatorial;
+      
     }
   }
   $numeroUsuario = (int)readline("Digite um número inteiro positivo para calcular seu fatorial: \n");
   $resultado = calcularFatorial($numeroUsuario);
-  echo "O fatorial do $numeroUsuario é de $resultado.";
+  echo "\n O fatorial do $numeroUsuario é de $resultado.";
 ?>
