@@ -5,17 +5,18 @@
   function calcularFatorial($numero){
     if ($numero < 0){
         return "Fatorial inválido para números negativos! \n\n";
-    }else if($numero == 1){
-        return 1;
+    
     }else{
         for($i = 1; $i <= $numero; $i++){
-            echo $i;
-            while ($i >= 1 and $i <= $numero){
-                echo $i * $numero;
-                
-                break;
-            }
+            echo "variavel i " . $i . "\n";
+            $fatorial = $i - 1;
+            echo "novo i - 1: " . $fatorial . "\n";
+            $resultado = $fatorial * $fatorial;
+           echo "variavel result " . $resultado . "\n" ;
+           //return $resultado;         
         }
+        
+        return $resultado;
       
     }
   }

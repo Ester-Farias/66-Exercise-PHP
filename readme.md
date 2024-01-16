@@ -19,11 +19,11 @@
     <li> ✔ Faça uma pesquisa em um array e retorne o índice de um elemento específico. </li>
     <li> ✔ Crie uma função para verificar se uma palavra é um palíndromo. </li>
     <li> ✔ Utilize um loop para imprimir os valores de um array em ordem reversa. </li>
-    <li>Crie um array associativo com informações de produtos (nome, preço, quantidade em estoque) e imprima uma tabela HTML com esses dados. </li>
+    <li> ✔ Crie um array associativo com informações de produtos (nome, preço, quantidade em estoque) e imprima uma tabela HTML com esses dados. </li>
     <li> ✔ Manipule datas: obtenha a data atual e imprima-a no formato "dia/mês/ano". </li>
     <li> ✔ Implemente um programa de tabuada. </li>
     <li>Crie uma função que calcule o fatorial de um número. </li>
-    <li>Escreva uma função que verifique se uma palavra é um palíndromo. </li>
+    <li> </li>
     <li> ✔ Implemente uma função para converter uma temperatura de Celsius para Fahrenheit e vice-versa. </li>
     <li> ✔ Crie um gerador de senhas aleatórias com diferentes níveis de complexidade. </li>
     <li>Crie um formulário HTML com campos de nome, email e senha. Ao enviar o formulário, processe os dados com PHP e imprima na tela. </li>
