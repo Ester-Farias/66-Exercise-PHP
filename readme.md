@@ -24,8 +24,8 @@
     <li> ✔ Implemente um programa de tabuada. </li>
     <li>Crie uma função que calcule o fatorial de um número. </li>
     <li>Escreva uma função que verifique se uma palavra é um palíndromo. </li>
-    <li>Implemente uma função para converter uma temperatura de Celsius para Fahrenheit e vice-versa. </li>
-    <li>Crie um gerador de senhas aleatórias com diferentes níveis de complexidade. </li>
+    <li> ✔ Implemente uma função para converter uma temperatura de Celsius para Fahrenheit e vice-versa. </li>
+    <li> ✔ Crie um gerador de senhas aleatórias com diferentes níveis de complexidade. </li>
     <li>Crie um formulário HTML com campos de nome, email e senha. Ao enviar o formulário, processe os dados com PHP e imprima na tela. </li>
     <li>Faça um formulário que permita o envio de um arquivo. Trate o arquivo no lado do servidor para garantir que seja do tipo esperado e exiba informações sobre ele. </li>
     <li>Faça uma requisição HTTP para obter dados de uma API (por exemplo, a API do GitHub). </li>
