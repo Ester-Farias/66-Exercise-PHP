@@ -12,10 +12,10 @@
    <h1 class="text-center">Exercicio 28</h1>
   <p>Faça um formulário que permita o envio de um arquivo. Trate o arquivo no lado do servidor para garantir que seja do tipo esperado e exiba informações sobre ele.</p>
   <hr>  
-  <form action="exercicio28.2.php" method="get">
+  <form action="exercicio28.2.php" method="POST" enctype="multipart/form-data">
         <div class="mb-3">
-            <label for="formFile" class="form-label fw-bolder lh-1">Insira um arquivo em formato .txt!</label>
-            <input class="form-control" name="inputFile" type="file" id="formFile">
+            <label for="formFile" class="form-label fw-bolder lh-1">Insira um arquivo!</label>
+            <input class="form-control" type="file" id="arquivo" name="arquivo" accept=".pdf, .doc, .docx">
         </div>
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
