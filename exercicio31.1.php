@@ -10,50 +10,66 @@ Digite 3 para editar uma tarefa.
 Digite 4 para apagar uma tarefa.\n";
 $start = (int)readline("Digite a opção desejada: \n");
 $doc = "exercicio31.2.txt";
-switch($start){
+
+switch ($start) {
     case 1:
-        //Listar as tarefas existentes/ se não existente -> case criar tarefas
-        
-        if(file_exists($doc)){
-            $tarefas = file_get_contents($doc);
-            echo "Tarefas listadas: \n\n";
-            echo $tarefas;
+        //Listando novas tarefas
+        if (file_exists($doc)) {
+            $tarefas = file($doc, FILE_IGNORE_NEW_LINES);
+            if (!empty($tarefas)) {
+                echo "Tarefas listadas: \n\n";
+                foreach($tarefas as $index => $tarefa){
+                    echo ($index + 1) . ". " . $tarefa . PHP_EOL;
+                }    
+            } else {
+                echo "Você não tem tarefas adicionadas!";
+            }
         } else {
-            echo "Você não tem tarefas adicionadas!";
+            echo "Arquivo de tarefas não encontrado!";
         }
 
         break;
-    
+
     case 2:
-        //Adicionar tarefas
-                
-        $tarefa = readline("Digite a tarefa a ser adicionado: \n");
+        //Adicionando novas tarefas
+      $tarefas = readline("Digite a nova tarefa a ser adicionada: ");
+      file_put_contents($doc, ($index) . $tarefas . PHP_EOL, FILE_APPEND);
+      echo "Tarefa adicionada com sucesso!";
 
-        file_put_contents("exercicio31.2.txt", $tarefa);
-        echo "Tarefa adicionada com sucesso! \n";
-
-
-        if(file_exists($doc)){
-            $tarefa = file_get_contents($doc);
-            echo "Tarefa adicionadas: \n\n";
-            echo $tarefa;
-        } else {
-            echo "O arquivo $tarefa não foi encontrado!";
-        }
-
-        break;
-
+      break;
     case 3:
-        //Editar tarefas existentes
+        //Editando novas tarefas
+        if (file_exists($doc)) {
+            $tarefas = file($doc, FILE_IGNORE_NEW_LINES);
+            if (!empty($tarefas)) {
+                echo "Tarefas listadas: \n\n";
+                foreach($tarefas as $index => $tarefa){
+                    echo ($index + 1) . ". " . $tarefa . PHP_EOL;
+                } 
+                $numero_tarefa = readline("Digite o número da tarefa a ser apagada! \n\n");
+
+                //Verificando se o número digitado corresponde com as listagens de tarefas.
+                if($numero_tarefa >=1 && $numero_tarefa <=count($tarefas)){
+                    $nova_tarefa = readline("Digite a nova tarefa a ser adicionada!\n");
+                    $tarefas[$numero_tarefa - 1] = ($numero_tarefa) . ". " . $nova_tarefa;
+                    echo "Tarefa editada com sucesso!";
+                } else {
+                    echo "Número da tarefa inválido! \n";
+                }
+                
+            } else {
+                echo "Você não tem tarefas adicionadas!";
+            }
+        } 
+
         break;
 
     case 4:
-        //Apagar tarefas
+       //Apagando novas tarefas
+
         break;
 
     default:
         echo "Comando inválido, tente novamente!";
 }
-
 ?>
-
