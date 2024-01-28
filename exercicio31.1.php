@@ -65,7 +65,25 @@ switch ($start) {
         break;
 
     case 4:
+           
        //Apagando novas tarefas
+       $tarefa = file($doc, FILE_IGNORE_NEW_LINES);
+        if (!empty($tarefas)){
+            echo "Tarefas listadas: \n\n";
+            foreach($tarefas as $index => $tarefa){
+                echo ($index + 1) . ". " . $tarefa . PHP_EOL;
+            }
+            $numero_tarefa = (int)readline("Digite o número da tarefa a ser apagada! \n\n");
+            if($numero_tarefa >= 1 && $numero_tarefa <= count($tarefas)){
+                unset($tarefas[$numero_tarefa - 1]);
+                file_put_contents($doc, implode(PHP_EOL, $tarefas));
+                echo "Tarefa apagada com sucesso! \n\n";
+            } else{
+                echo "Número da tarefa inválido! \n \n";
+            }
+        } else{
+            echo "Você não tem tarefas adicionadas!";
+        }
 
         break;
 
