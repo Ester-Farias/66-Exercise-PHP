@@ -30,7 +30,7 @@
     <li> ✔ Faça um formulário que permita o envio de um arquivo. Trate o arquivo no lado do servidor para garantir que seja do tipo esperado e exiba informações sobre ele. </li>
     <li> ✔ Faça uma requisição HTTP para obter dados de uma API (por exemplo, a API do GitHub). </li>
     <li> ✔ Crie um arquivo de texto com algumas linhas e, em seguida, escreva um script PHP para ler e imprimir o conteúdo desse arquivo. </li>
-    <li>Desenvolva um sistema simples de lista de tarefas que permita adicionar, excluir e marcar tarefas como concluídas. Armazene as tarefas em um arquivo. </li>
+    <li> ✔ Desenvolva um sistema simples de lista de tarefas que permita adicionar, excluir e marcar tarefas como concluídas. Armazene as tarefas em um arquivo. </li>
     <li>Implemente um sistema de upload de arquivos. </li>
     <li>Use a biblioteca GD para manipular imagens (redimensionar, cortar, etc.). </li>
     <li>Crie uma função de busca em um array multidimensional. </li>
