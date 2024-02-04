@@ -51,7 +51,12 @@ switch ($start) {
                 //Verificando se o número digitado corresponde com as listagens de tarefas.
                 if($numero_tarefa >=1 && $numero_tarefa <=count($tarefas)){
                     $nova_tarefa = readline("Digite a nova tarefa a ser adicionada!\n");
-                    $tarefas[$numero_tarefa - 1] = ($numero_tarefa) . ". " . $nova_tarefa;
+                     $tarefas[$numero_tarefa - 1] = $nova_tarefa;
+                    
+                    //$edittarefa = $numero_tarefa . ". " . $nova_tarefa;
+
+                   file_put_contents($doc, implode(PHP_EOL, $tarefas));
+                   //echo $edittarefa;
                     echo "Tarefa editada com sucesso!";
                 } else {
                     echo "Número da tarefa inválido! \n";
@@ -67,7 +72,7 @@ switch ($start) {
     case 4:
            
        //Apagando novas tarefas
-       $tarefa = file($doc, FILE_IGNORE_NEW_LINES);
+       $tarefas = file($doc, FILE_IGNORE_NEW_LINES);
         if (!empty($tarefas)){
             echo "Tarefas listadas: \n\n";
             foreach($tarefas as $index => $tarefa){
